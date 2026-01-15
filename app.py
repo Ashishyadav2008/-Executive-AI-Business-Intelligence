@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 from utils.analysis import load_data
 from utils.llm_chat import ask_llm
@@ -205,3 +205,4 @@ if st.button("📧 Send Report via Email"):
             st.error(str(e))
     else:
         st.warning("Please enter an email address")
+
